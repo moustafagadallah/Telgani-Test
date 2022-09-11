@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Hanimation_Arabic_Medium.otf">
+            <string>HaniArb-Medium</string>
+        </array>
+        <array key="hanimation-regular.ttf">
+            <string>HaniArb-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Booking DetailsVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BookingDetailsVC" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="BookingDetailsVC" customModule="Telgani_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQj-gT-lGa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5a-zx-Bg4">
+                                        <rect key="frame" x="0.0" y="20" width="419" height="1210"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BE0-or-9A4">
+                                                <rect key="frame" x="25" y="0.0" width="369" height="1210"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQP-zl-Yyz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="369" height="270"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmallBMW" translatesAutoresizingMaskIntoConstraints="NO" id="3We-h8-8pV">
+                                                                <rect key="frame" x="20" y="45" width="75" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="KI0-xL-Ye6"/>
+                                                                    <constraint firstAttribute="width" constant="75" id="qsU-6N-PEq"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KIA Pegas 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvd-Wo-XEB">
+                                                                <rect key="frame" x="105" y="25" width="116.5" height="32.5"/>
+                                                                <fontDescription key="fontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="20"/>
+                                                                <color key="textColor" name="TelgantiLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFCBE9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeY-Z2-Hs3">
+                                                                <rect key="frame" x="299" y="25" width="50" height="20"/>
+                                                                <color key="backgroundColor" name="TelganiPrimayColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="20" id="iBx-Th-6OZ"/>
+                                                                    <constraint firstAttribute="width" constant="50" id="kbC-Lm-QtJ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="15"/>
+                                                                <color key="textColor" name="TelganiBackgroundColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="8"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookingPeriodIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uOl-x5-84l">
+                                                                <rect key="frame" x="105" y="62.5" width="15" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="15" id="86t-bI-TPj"/>
+                                                                    <constraint firstAttribute="width" constant="15" id="lbf-8f-aRd"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/11/2021  TO 15/04/2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-S2-3uF">
+                                                                <rect key="frame" x="128" y="58.5" width="142.5" height="23"/>
+                                                                <fontDescription key="fontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="14"/>
+                                                                <color key="textColor" name="TelgantiLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoneyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VgS-6g-rSx">
+                                                                <rect key="frame" x="105" y="85.5" width="15" height="15"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="15" id="Fdg-pk-9iL"/>
+                                                                    <constraint firstAttribute="height" constant="15" id="Nez-Cd-oNf"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,900 SR / Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oC6-rR-TNE">
+                                                                <rect key="frame" x="128" y="82.5" width="89.5" height="23"/>
+                                                                <fontDescription key="fontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="14"/>
+                                                                <color key="textColor" name="TelgantiLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0E-WY-sQK">
+                                                                <rect key="frame" x="25" y="115.5" width="319" height="1"/>
+                                                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="KFh-FJ-Tch"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="932-pj-R81">
+                                                                <rect key="frame" x="25" y="126.5" width="319" height="29.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Status :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mie-Cu-Ggb">
+                                                                        <rect key="frame" x="0.0" y="5" width="70.5" height="19.5"/>
+                                                                        <fontDescription key="fontDescription" name="HaniArb-Regular" family="Hanimation Arabic" pointSize="12"/>
+                                                                        <color key="textColor" name="TelganiTextColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" DELIVERED" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXO-HW-VnD">
+                                                                        <rect key="frame" x="75.5" y="5" width="60" height="19.5"/>
+                                                                        <color key="backgroundColor" name="TelganiStatusBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="60" id="kYD-Md-QqD"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="12"/>
+                                                                        <color key="textColor" name="TelganiStatusColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="5"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUBSCRIPTIONS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FC-Eg-Eex">
+                                                                        <rect key="frame" x="140.5" y="5" width="100" height="19.5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="100" id="bHd-W6-xXy"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="12"/>
+                                                                        <color key="textColor" name="TelganiPrimayColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="5"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="0.75"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" red="0.71545362469999996" green="0.89764004949999998" blue="0.91373115780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Mie-Cu-Ggb" firstAttribute="top" secondItem="932-pj-R81" secondAttribute="top" constant="5" id="FYT-69-DBa"/>
+                                                                    <constraint firstItem="nXO-HW-VnD" firstAttribute="leading" secondItem="Mie-Cu-Ggb" secondAttribute="trailing" constant="5" id="GmW-qW-kEO"/>
+                                                                    <constraint firstItem="nXO-HW-VnD" firstAttribute="centerY" secondItem="Mie-Cu-Ggb" secondAttribute="centerY" id="akX-jo-hii"/>
+                                                                    <constraint firstItem="Mie-Cu-Ggb" firstAttribute="centerY" secondItem="932-pj-R81" secondAttribute="centerY" id="cjX-Kk-bLf"/>
+                                                                    <constraint firstItem="Mie-Cu-Ggb" firstAttribute="leading" secondItem="932-pj-R81" secondAttribute="leading" id="gLt-U9-M7D"/>
+                                                                    <constraint firstItem="9FC-Eg-Eex" firstAttribute="leading" secondItem="nXO-HW-VnD" secondAttribute="trailing" constant="5" id="mb0-we-QGn"/>
+                                                                    <constraint firstItem="9FC-Eg-Eex" firstAttribute="centerY" secondItem="nXO-HW-VnD" secondAttribute="centerY" id="rkM-Gu-iRZ"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6H-Kc-kuV">
+                                                                <rect key="frame" x="25" y="166" width="319" height="4"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mZg-H2-qar">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="319" height="4"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RP0-Au-AZB">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="4"/>
+                                                                                <color key="backgroundColor" name="TelganiStatusColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="4" id="eLe-OG-OaY"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="3"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xat-xE-BIx">
+                                                                                <rect key="frame" x="65" y="0.0" width="59.5" height="4"/>
+                                                                                <color key="backgroundColor" name="TelganiStatusColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="4" id="mLF-qt-5Wd"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="3"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DuI-pk-GOt">
+                                                                                <rect key="frame" x="129.5" y="0.0" width="60" height="4"/>
+                                                                                <color key="backgroundColor" name="TelganiStatusColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="4" id="BWg-20-BFd"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="3"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w76-rg-VX5">
+                                                                                <rect key="frame" x="194.5" y="0.0" width="59.5" height="4"/>
+                                                                                <color key="backgroundColor" name="TelganiSecondayColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="4" id="Zqw-Ig-4sE"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="3"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cb3-Rp-b7H">
+                                                                                <rect key="frame" x="259" y="0.0" width="60" height="4"/>
+                                                                                <color key="backgroundColor" name="TelganiSecondayColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="4" id="DLq-ZD-jTL"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="5"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="4" id="AiK-er-UcK"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="mZg-H2-qar" secondAttribute="trailing" id="Iu9-te-IWM"/>
+                                                                    <constraint firstItem="mZg-H2-qar" firstAttribute="top" secondItem="F6H-Kc-kuV" secondAttribute="top" id="X8e-Y9-M60"/>
+                                                                    <constraint firstItem="mZg-H2-qar" firstAttribute="leading" secondItem="F6H-Kc-kuV" secondAttribute="leading" id="cEM-Ip-F0i"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpE-XI-png">
+                                                                <rect key="frame" x="25" y="185" width="324" height="1"/>
+                                                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="N5l-x1-65o"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hqm-Ou-Bj3">
+                                                                <rect key="frame" x="25" y="206" width="324" height="40"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dy8-O5-rdg">
+                                                                        <rect key="frame" x="8" y="0.0" width="316" height="40"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCL-sV-GDZ">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="153" height="40"/>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="Booking Opertions">
+                                                                                    <fontDescription key="titleFontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="16"/>
+                                                                                    <color key="baseForegroundColor" name="TelganiPrimayColor"/>
+                                                                                </buttonConfiguration>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="8"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                        <color key="value" name="TelganiSecondayColor"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                        <real key="value" value="0.75"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <action selector="bookingOperationsBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gYO-73-bVp"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rce-rL-pLc">
+                                                                                <rect key="frame" x="163" y="0.0" width="153" height="40"/>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" title="Hide Details">
+                                                                                    <fontDescription key="titleFontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="16"/>
+                                                                                    <color key="baseForegroundColor" name="TelganiPrimayColor"/>
+                                                                                </buttonConfiguration>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="8"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                        <color key="value" name="TelganiSecondayColor"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                        <real key="value" value="0.75"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <action selector="hideDetailsBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qoa-5Y-lot"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="UHU-KO-MLe"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Dy8-O5-rdg" secondAttribute="trailing" id="gT6-SA-p2q"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Dy8-O5-rdg" secondAttribute="bottom" id="pUb-Jp-z9N"/>
+                                                                    <constraint firstItem="Dy8-O5-rdg" firstAttribute="leading" secondItem="Hqm-Ou-Bj3" secondAttribute="leading" constant="8" id="te1-3r-vVb"/>
+                                                                    <constraint firstItem="Dy8-O5-rdg" firstAttribute="top" secondItem="Hqm-Ou-Bj3" secondAttribute="top" id="wPv-Qb-Xg2"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Hqm-Ou-Bj3" firstAttribute="top" secondItem="lpE-XI-png" secondAttribute="bottom" constant="20" id="2jB-ot-J2b"/>
+                                                            <constraint firstItem="VgS-6g-rSx" firstAttribute="leading" secondItem="uOl-x5-84l" secondAttribute="leading" id="3Xc-hb-DuN"/>
+                                                            <constraint firstItem="TAF-S2-3uF" firstAttribute="centerY" secondItem="uOl-x5-84l" secondAttribute="centerY" id="5yO-hr-MS7"/>
+                                                            <constraint firstItem="VgS-6g-rSx" firstAttribute="top" secondItem="uOl-x5-84l" secondAttribute="bottom" constant="8" symbolic="YES" id="7Le-z8-bdN"/>
+                                                            <constraint firstItem="uOl-x5-84l" firstAttribute="top" secondItem="Gvd-Wo-XEB" secondAttribute="bottom" constant="5" id="7Ob-mD-buy"/>
+                                                            <constraint firstItem="932-pj-R81" firstAttribute="top" secondItem="h0E-WY-sQK" secondAttribute="bottom" constant="10" id="9fv-Wt-Hnf"/>
+                                                            <constraint firstItem="oC6-rR-TNE" firstAttribute="leading" secondItem="TAF-S2-3uF" secondAttribute="leading" id="BWq-DC-CUY"/>
+                                                            <constraint firstItem="Gvd-Wo-XEB" firstAttribute="leading" secondItem="3We-h8-8pV" secondAttribute="trailing" constant="10" id="EZs-K5-jK5"/>
+                                                            <constraint firstItem="Gvd-Wo-XEB" firstAttribute="top" secondItem="oQP-zl-Yyz" secondAttribute="top" constant="25" id="FpH-ko-W8n"/>
+                                                            <constraint firstItem="Hqm-Ou-Bj3" firstAttribute="leading" secondItem="F6H-Kc-kuV" secondAttribute="leading" id="HrM-6H-N4M"/>
+                                                            <constraint firstAttribute="height" constant="270" id="MUl-QA-sd2"/>
+                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TAF-S2-3uF" secondAttribute="trailing" constant="10" id="PAW-Md-NoN"/>
+                                                            <constraint firstItem="F6H-Kc-kuV" firstAttribute="trailing" secondItem="932-pj-R81" secondAttribute="trailing" id="Pn3-cc-AN4"/>
+                                                            <constraint firstItem="3We-h8-8pV" firstAttribute="leading" secondItem="oQP-zl-Yyz" secondAttribute="leading" constant="20" id="Srb-LX-cSb"/>
+                                                            <constraint firstItem="932-pj-R81" firstAttribute="leading" secondItem="oQP-zl-Yyz" secondAttribute="leading" constant="25" id="Zoe-Hi-cyA"/>
+                                                            <constraint firstItem="TAF-S2-3uF" firstAttribute="leading" secondItem="uOl-x5-84l" secondAttribute="trailing" constant="8" symbolic="YES" id="aOa-uE-Rqi"/>
+                                                            <constraint firstItem="h0E-WY-sQK" firstAttribute="leading" secondItem="oQP-zl-Yyz" secondAttribute="leading" constant="25" id="ajW-ga-6Xk"/>
+                                                            <constraint firstItem="F6H-Kc-kuV" firstAttribute="top" secondItem="932-pj-R81" secondAttribute="bottom" constant="10" id="dSy-4Y-8Ry"/>
+                                                            <constraint firstItem="lpE-XI-png" firstAttribute="top" secondItem="F6H-Kc-kuV" secondAttribute="bottom" constant="15" id="doz-a4-fp6"/>
+                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oC6-rR-TNE" secondAttribute="trailing" constant="10" id="hPu-PF-cZc"/>
+                                                            <constraint firstItem="TAF-S2-3uF" firstAttribute="centerY" secondItem="3We-h8-8pV" secondAttribute="centerY" id="huM-uj-MrL"/>
+                                                            <constraint firstItem="uOl-x5-84l" firstAttribute="leading" secondItem="Gvd-Wo-XEB" secondAttribute="leading" id="jCO-Z3-pfn"/>
+                                                            <constraint firstItem="Hqm-Ou-Bj3" firstAttribute="trailing" secondItem="lpE-XI-png" secondAttribute="trailing" id="kvR-Qd-1n0"/>
+                                                            <constraint firstItem="oC6-rR-TNE" firstAttribute="top" secondItem="TAF-S2-3uF" secondAttribute="bottom" constant="1" id="lcq-Oa-y5W"/>
+                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gvd-Wo-XEB" secondAttribute="trailing" constant="10" id="oOs-rn-KY8"/>
+                                                            <constraint firstItem="F6H-Kc-kuV" firstAttribute="leading" secondItem="932-pj-R81" secondAttribute="leading" id="pmt-k6-qjA"/>
+                                                            <constraint firstAttribute="trailing" secondItem="h0E-WY-sQK" secondAttribute="trailing" constant="25" id="vpB-DG-OS9"/>
+                                                            <constraint firstItem="h0E-WY-sQK" firstAttribute="top" secondItem="oC6-rR-TNE" secondAttribute="bottom" constant="10" id="vz8-l6-ePZ"/>
+                                                            <constraint firstItem="Hqm-Ou-Bj3" firstAttribute="leading" secondItem="lpE-XI-png" secondAttribute="leading" id="w2Q-QK-bno"/>
+                                                            <constraint firstAttribute="trailing" secondItem="932-pj-R81" secondAttribute="trailing" constant="25" id="wTx-cG-7GY"/>
+                                                            <constraint firstItem="BeY-Z2-Hs3" firstAttribute="top" secondItem="oQP-zl-Yyz" secondAttribute="top" constant="25" id="wwG-r6-OW6"/>
+                                                            <constraint firstAttribute="trailing" secondItem="BeY-Z2-Hs3" secondAttribute="trailing" constant="20" id="zRd-nQ-aju"/>
+                                                            <constraint firstItem="Hqm-Ou-Bj3" firstAttribute="trailing" secondItem="BeY-Z2-Hs3" secondAttribute="trailing" id="zx4-sX-TB8"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                <color key="value" name="TelganiShadowColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                <real key="value" value="0.10000000000000001"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                <size key="value" width="0.0" height="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OL9-L4-fgA">
+                                                        <rect key="frame" x="0.0" y="290" width="369" height="40"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qiK-K4-HSk">
+                                                                <rect key="frame" x="10" y="0.0" width="349" height="40"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkU-pN-5ap">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="40"/>
+                                                                        <color key="backgroundColor" name="TelganiPrimayColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="1ac-bg-btH"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Extend ">
+                                                                            <fontDescription key="titleFontDescription" name="HaniArb-Bold" family="Hanimation Arabic" pointSize="14"/>
+                                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </buttonConfiguration>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="8"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wS3-ZW-kwI">
+                                                                        <rect key="frame" x="179.5" y="0.0" width="169.5" height="40"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="IQU-bs-5gT"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Cancel ">
+                                                                            <fontDescription key="titleFontDescription" name="HaniArb-Regular" family="Hanimation Arabic" pointSize="14"/>
+                                                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                                        </buttonConfiguration>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="0.75"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="8"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" name="TelganiPrimayColor"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="15Y-F4-l70"/>
+                                                            <constraint firstAttribute="trailing" secondItem="qiK-K4-HSk" secondAttribute="trailing" constant="10" id="2pf-sZ-cby"/>
+                                                            <constraint firstItem="qiK-K4-HSk" firstAttribute="leading" secondItem="OL9-L4-fgA" secondAttribute="leading" constant="10" id="Njm-h9-7Gj"/>
+                                                            <constraint firstAttribute="bottom" secondItem="qiK-K4-HSk" secondAttribute="bottom" id="PaU-8c-Qry"/>
+                                                            <constraint firstItem="qiK-K4-HSk" firstAttribute="top" secondItem="OL9-L4-fgA" secondAttribute="top" id="cG7-tC-NUl"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9F-bG-OaU">
+                                                        <rect key="frame" x="0.0" y="350" width="369" height="650"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atq-9T-Ele">
+                                                                <rect key="frame" x="10" y="10" width="125" height="29"/>
+                                                                <fontDescription key="fontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="18"/>
+                                                                <color key="textColor" name="TelgantiLabelColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bFd-5A-X1s">
+                                                                <rect key="frame" x="0.0" y="47" width="369" height="603"/>
+                                                                <color key="backgroundColor" name="TelganiBackgroundColor"/>
+                                                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <prototypes>
+                                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaymentTableViewCell" rowHeight="110" id="fll-aK-Wer" customClass="PaymentTableViewCell" customModule="Telgani_Test" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="44.5" width="369" height="110"/>
+                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fll-aK-Wer" id="Y4y-nC-XEo">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="369" height="110"/>
+                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                            <subviews>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLb-no-7R6">
+                                                                                    <rect key="frame" x="20" y="10" width="329" height="95"/>
+                                                                                    <subviews>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWc-0Q-pYO">
+                                                                                            <rect key="frame" x="10" y="5" width="62.5" height="23"/>
+                                                                                            <fontDescription key="fontDescription" name="HaniArb-Regular" family="Hanimation Arabic" pointSize="14"/>
+                                                                                            <color key="textColor" name="TelganiTextColor"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                        </label>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="350 SAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zo7-61-QXk">
+                                                                                            <rect key="frame" x="10" y="33" width="76" height="39"/>
+                                                                                            <fontDescription key="fontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="24"/>
+                                                                                            <color key="textColor" name="TelgantiLabelColor"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                        </label>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" PAID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iR0-y3-wzi">
+                                                                                            <rect key="frame" x="10" y="82" width="30" height="19.5"/>
+                                                                                            <color key="backgroundColor" name="TelganiStatusBackgroundColor"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="width" constant="30" id="zPe-PL-g8r"/>
+                                                                                            </constraints>
+                                                                                            <fontDescription key="fontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="12"/>
+                                                                                            <color key="textColor" name="TelganiStatusColor"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                            <userDefinedRuntimeAttributes>
+                                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                    <real key="value" value="3"/>
+                                                                                                </userDefinedRuntimeAttribute>
+                                                                                            </userDefinedRuntimeAttributes>
+                                                                                        </label>
+                                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5F-Pi-77K">
+                                                                                            <rect key="frame" x="289" y="37.5" width="20" height="20"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" constant="20" id="Uwr-mp-UYe"/>
+                                                                                                <constraint firstAttribute="width" constant="20" id="XJw-oL-AIf"/>
+                                                                                            </constraints>
+                                                                                            <color key="tintColor" name="TelganiPrimayColor"/>
+                                                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                            <state key="normal" title="Button" image="UnCheckBox"/>
+                                                                                            <state key="selected" image="Checkbox">
+                                                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                            </state>
+                                                                                            <connections>
+                                                                                                <action selector="selectPaymentBtnAction:" destination="fll-aK-Wer" eventType="touchUpInside" id="na9-0r-7YA"/>
+                                                                                            </connections>
+                                                                                        </button>
+                                                                                    </subviews>
+                                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GWc-0Q-pYO" secondAttribute="trailing" constant="10" id="5mg-Re-KUQ"/>
+                                                                                        <constraint firstItem="zo7-61-QXk" firstAttribute="leading" secondItem="GWc-0Q-pYO" secondAttribute="leading" id="CBh-uk-L5L"/>
+                                                                                        <constraint firstItem="zo7-61-QXk" firstAttribute="top" secondItem="GWc-0Q-pYO" secondAttribute="bottom" constant="5" id="LsY-bS-DNC"/>
+                                                                                        <constraint firstAttribute="trailing" secondItem="V5F-Pi-77K" secondAttribute="trailing" constant="20" id="U8J-w8-Zh1"/>
+                                                                                        <constraint firstItem="V5F-Pi-77K" firstAttribute="centerY" secondItem="MLb-no-7R6" secondAttribute="centerY" id="UTr-yB-mtw"/>
+                                                                                        <constraint firstItem="GWc-0Q-pYO" firstAttribute="top" secondItem="MLb-no-7R6" secondAttribute="top" constant="5" id="XMu-NQ-b5f"/>
+                                                                                        <constraint firstItem="iR0-y3-wzi" firstAttribute="leading" secondItem="zo7-61-QXk" secondAttribute="leading" id="kbd-ot-MTw"/>
+                                                                                        <constraint firstItem="iR0-y3-wzi" firstAttribute="top" secondItem="zo7-61-QXk" secondAttribute="bottom" constant="10" id="loY-9G-aWj"/>
+                                                                                        <constraint firstItem="GWc-0Q-pYO" firstAttribute="leading" secondItem="MLb-no-7R6" secondAttribute="leading" constant="10" id="qAE-Sz-rjZ"/>
+                                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iR0-y3-wzi" secondAttribute="trailing" constant="10" id="yNl-dA-ExW"/>
+                                                                                    </constraints>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                            <real key="value" value="8"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </view>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" name="TelganiBackgroundColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="trailing" secondItem="MLb-no-7R6" secondAttribute="trailing" constant="20" id="2nx-qW-b9B"/>
+                                                                                <constraint firstItem="MLb-no-7R6" firstAttribute="leading" secondItem="Y4y-nC-XEo" secondAttribute="leading" constant="20" id="FP4-Fk-t6r"/>
+                                                                                <constraint firstItem="MLb-no-7R6" firstAttribute="top" secondItem="Y4y-nC-XEo" secondAttribute="top" constant="10" id="Tlf-92-rIc"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="MLb-no-7R6" secondAttribute="bottom" constant="5" id="jEu-Gz-SNb"/>
+                                                                            </constraints>
+                                                                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                                        </tableViewCellContentView>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <connections>
+                                                                            <outlet property="selectPaymentBtn" destination="V5F-Pi-77K" id="YKh-gq-bRG"/>
+                                                                        </connections>
+                                                                    </tableViewCell>
+                                                                </prototypes>
+                                                            </tableView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="bFd-5A-X1s" firstAttribute="top" secondItem="atq-9T-Ele" secondAttribute="bottom" constant="8" symbolic="YES" id="434-2g-nRF"/>
+                                                            <constraint firstItem="atq-9T-Ele" firstAttribute="top" secondItem="K9F-bG-OaU" secondAttribute="top" constant="10" id="GhB-4z-tTW"/>
+                                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="atq-9T-Ele" secondAttribute="trailing" constant="10" id="IS4-cL-GlY"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bFd-5A-X1s" secondAttribute="trailing" id="Q5E-It-w1c"/>
+                                                            <constraint firstAttribute="height" constant="650" id="W5i-PD-WVu"/>
+                                                            <constraint firstItem="atq-9T-Ele" firstAttribute="leading" secondItem="K9F-bG-OaU" secondAttribute="leading" constant="10" id="eaV-7M-e4B"/>
+                                                            <constraint firstItem="bFd-5A-X1s" firstAttribute="leading" secondItem="K9F-bG-OaU" secondAttribute="leading" id="heT-qE-H41"/>
+                                                            <constraint firstAttribute="bottom" secondItem="bFd-5A-X1s" secondAttribute="bottom" id="yt7-9G-rtH"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWX-Nw-Oqq">
+                                                        <rect key="frame" x="0.0" y="1020" width="369" height="190"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-gR-NKy">
+                                                                <rect key="frame" x="10" y="20" width="349" height="165"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xck-A3-IHm">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="349" height="0.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmv-5P-AxC">
+                                                                                <rect key="frame" x="10" y="-12.5" width="48" height="26"/>
+                                                                                <fontDescription key="fontDescription" name="HaniArb-Regular" family="Hanimation Arabic" pointSize="16"/>
+                                                                                <color key="textColor" name="TelganiTextColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,900 SR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsc-ns-V1m">
+                                                                                <rect key="frame" x="288.5" y="-12.5" width="50.5" height="26"/>
+                                                                                <fontDescription key="fontDescription" name="HaniArb-Regular" family="Hanimation Arabic" pointSize="16"/>
+                                                                                <color key="textColor" name="TelgantiLabelColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="mmv-5P-AxC" firstAttribute="centerY" secondItem="Xck-A3-IHm" secondAttribute="centerY" id="AZx-NQ-0wx"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="vsc-ns-V1m" secondAttribute="trailing" constant="10" id="ZVA-Po-FHD"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="vsc-ns-V1m" secondAttribute="trailing" constant="10" id="aRG-Ef-pEz"/>
+                                                                            <constraint firstItem="vsc-ns-V1m" firstAttribute="centerY" secondItem="mmv-5P-AxC" secondAttribute="centerY" id="rR9-MF-4Lh"/>
+                                                                            <constraint firstItem="mmv-5P-AxC" firstAttribute="leading" secondItem="Xck-A3-IHm" secondAttribute="leading" constant="10" id="syE-sc-ue1"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cD-js-7Zf">
+                                                                        <rect key="frame" x="0.0" y="11" width="349" height="66"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete payment (2/5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tj-Dz-sbl">
+                                                                                <rect key="frame" x="10" y="20" width="149.5" height="26"/>
+                                                                                <fontDescription key="fontDescription" name="HaniArb-Regular" family="Hanimation Arabic" pointSize="16"/>
+                                                                                <color key="textColor" name="TelganiTextColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 SR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOm-uv-IFV">
+                                                                                <rect key="frame" x="305.5" y="20" width="33.5" height="26"/>
+                                                                                <fontDescription key="fontDescription" name="HaniArb-Regular" family="Hanimation Arabic" pointSize="16"/>
+                                                                                <color key="textColor" name="TelgantiLabelColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="3Tj-Dz-sbl" firstAttribute="centerY" secondItem="5cD-js-7Zf" secondAttribute="centerY" id="2Kp-Jq-Dp0"/>
+                                                                            <constraint firstItem="3Tj-Dz-sbl" firstAttribute="baseline" secondItem="nOm-uv-IFV" secondAttribute="baseline" id="BMB-5o-mR0"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="nOm-uv-IFV" secondAttribute="trailing" constant="10" id="hva-uU-7Yr"/>
+                                                                            <constraint firstItem="3Tj-Dz-sbl" firstAttribute="leading" secondItem="5cD-js-7Zf" secondAttribute="leading" constant="10" id="m3K-YM-upi"/>
+                                                                            <constraint firstItem="nOm-uv-IFV" firstAttribute="centerY" secondItem="3Tj-Dz-sbl" secondAttribute="centerY" id="rBp-dO-ndy"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="nOm-uv-IFV" secondAttribute="trailing" constant="10" id="tMh-7j-wav"/>
+                                                                            <constraint firstItem="3Tj-Dz-sbl" firstAttribute="top" secondItem="5cD-js-7Zf" secondAttribute="top" constant="20" id="xgy-pn-t2O"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXO-h1-uwB">
+                                                                        <rect key="frame" x="0.0" y="87.5" width="349" height="1"/>
+                                                                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="LZ1-7G-f0G"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCm-9F-1tq">
+                                                                        <rect key="frame" x="0.0" y="99" width="349" height="66"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining Due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pae-Xc-v1d">
+                                                                                <rect key="frame" x="10" y="20" width="88" height="26"/>
+                                                                                <fontDescription key="fontDescription" name="HaniArb-Regular" family="Hanimation Arabic" pointSize="16"/>
+                                                                                <color key="textColor" name="TelganiTextColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,100 SR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKq-PY-5Uy">
+                                                                                <rect key="frame" x="275.5" y="18" width="63.5" height="30"/>
+                                                                                <fontDescription key="fontDescription" name="HaniArb-Medium" family="Hanimation Arabic" pointSize="20"/>
+                                                                                <color key="textColor" name="TelgantiLabelColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="HKq-PY-5Uy" firstAttribute="centerY" secondItem="Pae-Xc-v1d" secondAttribute="centerY" id="7b4-JM-Mgo"/>
+                                                                            <constraint firstItem="Pae-Xc-v1d" firstAttribute="leading" secondItem="TCm-9F-1tq" secondAttribute="leading" constant="10" id="BBl-wZ-Hh7"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="HKq-PY-5Uy" secondAttribute="trailing" constant="10" id="PTp-sQ-qLL"/>
+                                                                            <constraint firstItem="Pae-Xc-v1d" firstAttribute="top" secondItem="TCm-9F-1tq" secondAttribute="top" constant="20" id="Vxy-9T-Lhh"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="HKq-PY-5Uy" secondAttribute="trailing" constant="10" id="Yas-zy-9gA"/>
+                                                                            <constraint firstItem="Pae-Xc-v1d" firstAttribute="centerY" secondItem="TCm-9F-1tq" secondAttribute="centerY" id="Yyw-1y-nWr"/>
+                                                                            <constraint firstItem="Pae-Xc-v1d" firstAttribute="baseline" secondItem="HKq-PY-5Uy" secondAttribute="baseline" id="sDh-Gp-XHd"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="TCm-9F-1tq" firstAttribute="top" secondItem="zXO-h1-uwB" secondAttribute="bottom" constant="10.5" id="8nX-cb-ade"/>
+                                                                    <constraint firstItem="5cD-js-7Zf" firstAttribute="top" secondItem="Xck-A3-IHm" secondAttribute="bottom" constant="10.5" id="Eu7-1u-sc3"/>
+                                                                    <constraint firstItem="zXO-h1-uwB" firstAttribute="top" secondItem="5cD-js-7Zf" secondAttribute="bottom" constant="10.5" id="Tdm-Od-vIk"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Rsi-gR-NKy" secondAttribute="trailing" constant="10" id="IqZ-oh-W36"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Rsi-gR-NKy" secondAttribute="bottom" constant="5" id="ZrX-u6-mW8"/>
+                                                            <constraint firstItem="Rsi-gR-NKy" firstAttribute="leading" secondItem="NWX-Nw-Oqq" secondAttribute="leading" constant="10" id="jRu-nQ-75z"/>
+                                                            <constraint firstAttribute="height" constant="190" id="r1r-jl-EIf"/>
+                                                            <constraint firstItem="Rsi-gR-NKy" firstAttribute="top" secondItem="NWX-Nw-Oqq" secondAttribute="top" constant="20" id="vEO-47-Xkf"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                                <real key="value" value="0.10000000000000001"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                                <size key="value" width="0.0" height="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                                <color key="value" name="TelganiShadowColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="BE0-or-9A4" secondAttribute="trailing" constant="25" id="Ot6-se-Awk"/>
+                                            <constraint firstItem="BE0-or-9A4" firstAttribute="leading" secondItem="w5a-zx-Bg4" secondAttribute="leading" constant="25" id="SiL-8t-p6r"/>
+                                            <constraint firstItem="BE0-or-9A4" firstAttribute="top" secondItem="w5a-zx-Bg4" secondAttribute="top" id="brB-P7-Hu3"/>
+                                            <constraint firstAttribute="bottom" secondItem="BE0-or-9A4" secondAttribute="bottom" id="ik9-CG-V8G"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="w5a-zx-Bg4" secondAttribute="trailing" id="Rgy-yP-L0d"/>
+                                    <constraint firstItem="w5a-zx-Bg4" firstAttribute="width" secondItem="TQj-gT-lGa" secondAttribute="width" multiplier="1.01208" id="SAf-wX-F2K"/>
+                                    <constraint firstAttribute="bottom" secondItem="w5a-zx-Bg4" secondAttribute="bottom" constant="30" id="YiZ-a1-bir"/>
+                                    <constraint firstItem="w5a-zx-Bg4" firstAttribute="top" secondItem="TQj-gT-lGa" secondAttribute="top" constant="20" id="a7w-wc-iql"/>
+                                    <constraint firstItem="w5a-zx-Bg4" firstAttribute="leading" secondItem="TQj-gT-lGa" secondAttribute="leading" id="bwg-2v-B6o"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSi-gL-3no">
+                                <rect key="frame" x="0.0" y="1105" width="414" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4og-kx-ctV">
+                                        <rect key="frame" x="50" y="17.5" width="314" height="50"/>
+                                        <color key="backgroundColor" name="TelganiPrimayColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hO3-Xg-XQn"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pay 750 SAR">
+                                            <fontDescription key="titleFontDescription" name="HaniArb-Regular" family="Hanimation Arabic" pointSize="14"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4og-kx-ctV" firstAttribute="centerY" secondItem="qSi-gL-3no" secondAttribute="centerY" id="g0y-dp-cH1"/>
+                                    <constraint firstAttribute="height" constant="85" id="iJQ-VD-0tZ"/>
+                                    <constraint firstItem="4og-kx-ctV" firstAttribute="leading" secondItem="qSi-gL-3no" secondAttribute="leading" constant="50" id="kAh-0Q-NXt"/>
+                                    <constraint firstItem="4og-kx-ctV" firstAttribute="centerX" secondItem="qSi-gL-3no" secondAttribute="centerX" id="nmE-J2-XgQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="4og-kx-ctV" secondAttribute="trailing" constant="50" id="qji-Fk-484"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="TelganiBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TQj-gT-lGa" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="8Gi-7z-sEV"/>
+                            <constraint firstItem="qSi-gL-3no" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="FCp-E5-rYr"/>
+                            <constraint firstItem="TQj-gT-lGa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PfL-Ad-Fnq"/>
+                            <constraint firstItem="TQj-gT-lGa" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Vje-dC-vfJ"/>
+                            <constraint firstAttribute="bottom" secondItem="qSi-gL-3no" secondAttribute="bottom" constant="10" id="mv4-H7-Can"/>
+                            <constraint firstItem="TQj-gT-lGa" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="oYs-YH-6ut"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TQj-gT-lGa" secondAttribute="bottom" constant="61" id="u6T-t0-zdH"/>
+                            <constraint firstItem="qSi-gL-3no" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="vqn-wZ-X1Y"/>
+                            <constraint firstItem="qSi-gL-3no" firstAttribute="top" secondItem="TQj-gT-lGa" secondAttribute="bottom" id="wv1-qg-uPw"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="bookingActionsView" destination="OL9-L4-fgA" id="jXT-t2-wLr"/>
+                        <outlet property="containerStackView" destination="BE0-or-9A4" id="exi-BG-vka"/>
+                        <outlet property="detailsView" destination="oQP-zl-Yyz" id="Phr-9N-jdL"/>
+                        <outlet property="paymentDetailsView" destination="NWX-Nw-Oqq" id="C59-9B-kZh"/>
+                        <outlet property="paymentsTableView" destination="bFd-5A-X1s" id="FHG-1h-kON"/>
+                        <outlet property="paymentsView" destination="K9F-bG-OaU" id="lhO-tW-u4t"/>
+                        <outlet property="scrollView" destination="TQj-gT-lGa" id="lZe-u4-71C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BookingPeriodIcon" width="15" height="15"/>
+        <image name="Checkbox" width="24" height="24"/>
+        <image name="MoneyIcon" width="17" height="16"/>
+        <image name="SmallBMW" width="75" height="38"/>
+        <image name="UnCheckBox" width="20" height="20"/>
+        <namedColor name="TelganiBackgroundColor">
+            <color red="0.97254901960784312" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TelganiPrimayColor">
+            <color red="0.29800000786781311" green="0.6470000147819519" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TelganiSecondayColor">
+            <color red="0.75999999046325684" green="0.77999997138977051" blue="0.81999999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TelganiShadowColor">
+            <color red="0.031372549019607843" green="0.26666666666666666" blue="0.25098039215686274" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TelganiStatusBackgroundColor">
+            <color red="0.88999998569488525" green="0.95999997854232788" blue="0.93000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TelganiStatusColor">
+            <color red="0.019999999552965164" green="0.57999998331069946" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TelganiTextColor">
+            <color red="0.30588235294117649" green="0.36470588235294116" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TelgantiLabelColor">
+            <color red="0.18400000035762787" green="0.20800000429153442" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
