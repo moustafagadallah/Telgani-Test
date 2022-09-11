@@ -71,7 +71,7 @@ class BookingDetailsVC : UIViewController {
         
         self.removeInputView(view: bookingActionsView)
     
-        title = "Booking Details"
+        title = "Reservation Details"
         setupBackBarButtonItem()
         
         
